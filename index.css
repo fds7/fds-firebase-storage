@@ -1,0 +1,15 @@
+body.authed .login-form {
+  display: none;
+}
+
+body:not(.authed) .logout-form,
+body:not(.authed) .file-form {
+  display: none;
+}
+
+.image-list__item {
+  display: block;
+  border: 1px solid black;
+  margin: 10px 0;
+  max-width: 10vw;
+}

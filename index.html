@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="login-form">
+    <button class="login-form__google-btn">구글로 로그인</button>
+  </div>
+  <div class="logout-form">
+    <button class="logout-form__btn">로그아웃</button>
+  </div>
+  <div class="file-form">
+    <input type="file" class="file-form__input" accept="image/*">
+    <button class="file-form__submit">업로드</button>
+  </div>
+  <div class="image-list"></div>
+
+  <!-- Firebase SDK 설정 -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBMoOiIBTCHlBX2hr3Jo-TJGvoSYQ4krhg",
+      authDomain: "fds-firebase-test.firebaseapp.com",
+      databaseURL: "https://fds-firebase-test.firebaseio.com",
+      projectId: "fds-firebase-test",
+      storageBucket: "fds-firebase-test.appspot.com",
+      messagingSenderId: "671150457180"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="./index.js"></script>
+</body>
+</html>
